@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="css/registation.css"/>
+    <script src="js/sign-in.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="login form">
+        <header>Login</header>
+        <form>
+            <input id="email" type="text" placeholder="Enter your email"/>
+            <input id="password" type="password" placeholder="Enter your password"/>
+            <a href="#">Forgot password?</a>
+            <input type="button" class="button" onclick="signIn()" value="Login"/>
+        </form>
+        <div class="signup"></div>
+        <span class="signup">Don't have an account?
+         <label><a href="sign-up.html">Signup</a></label>
+        </span>
+    </div>
+</div>
+</div>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

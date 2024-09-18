@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl | www.codinglabweb.com--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Sign Up</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="css/registation.css"/>
+    <script defer src="js/sign-up.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="registration form">
+        <header>Signup</header>
+        <form>
+            <input type="text" placeholder="First name" id="firstName"/>
+            <input type="text" placeholder="Last name" id="lastName"/>
+            <input type="email" placeholder="Enter your email" id="email"/>
+            <input type="password" placeholder="Create a password" id="password"/>
+            <input type="button" class="button" value="Signup" onclick="signUp()"/>
+        </form>
+        <div class="signup">
+          <span class="signup"
+          >Already have an account?
+            <label><a href="login.html">Login</a></label>
+          </span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

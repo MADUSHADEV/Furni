@@ -1,0 +1,28 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/web2_db?useSSL=false&amp;allowPublicKeyRetrieval=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">#Apeamma2001</property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Mention annotated classes -->
+        <mapping class="com.entity.User"/>
+        <mapping class="com.entity.Category"/>
+        <mapping class="com.entity.Address"/>
+        <mapping class="com.entity.Invoice"/>
+        <mapping class="com.entity.InvoiceItem"/>
+        <mapping class="com.entity.Order"/>
+        <mapping class="com.entity.OrderStatus"/>
+        <mapping class="com.entity.Product"/>
+        <mapping class="com.entity.Status"/>
+        <mapping class="com.entity.Cart"/>
+        <mapping class="com.entity.Country"/>
+    </session-factory>
+</hibernate-configuration>
